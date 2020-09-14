@@ -8,7 +8,9 @@ const MainStyled = styled.main`
 
 function Main() {
   return (
-    <MainStyled />
+    <MainStyled>
+        <h1>This is a Font Test</h1>
+    </MainStyled>
     );
 }
 
