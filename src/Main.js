@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Card from './Card';
 
 const MainStyled = styled.main`
     background-color: hsl(180, 52%, 96%);
@@ -9,7 +10,7 @@ const MainStyled = styled.main`
 function Main() {
   return (
     <MainStyled>
-        <h1>This is a Font Test</h1>
+        <Card />
     </MainStyled>
     );
 }
