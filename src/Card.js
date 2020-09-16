@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Company from './Card-header';
 import Title from './Card-title';
 import Details from './Card-details';
+import Technologies from './Card-technologies';
 
 const CardStyled = styled.div`
     background-color: #fff;
@@ -19,6 +20,7 @@ function Card() {
       <Company company="Photosnap" />
       <Title title="Senior Frontend Developer" />
       <Details />
+      <Technologies />
     </CardStyled>
     );
 }
