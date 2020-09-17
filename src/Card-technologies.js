@@ -23,6 +23,7 @@ const Technology = styled.li`
 `;
 
 function Technologies(props) {
+ 
   return (
     <ListStyled>
         <Technology>Frontend</Technology>

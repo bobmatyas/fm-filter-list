@@ -30,15 +30,15 @@ const CompanyDetails = styled.div`
     margin-left: 25px; 
 `;
 
-function Card() {
+function Card(props) {
   return (
     <CardStyled>
         <CompanyInfo>
           <img src={Logo} style={{float: "left"}} alt="Photosnap" />
             <CompanyDetails>
-              <Company company="Photosnap" />
-              <Title title="Senior Frontend Developer" />
-              <Details />
+              <Company company={props.company} />
+              <Title position={props.position} />
+              <Details details={props.technologies} />
             </CompanyDetails>
         </CompanyInfo>
       <Technologies />
