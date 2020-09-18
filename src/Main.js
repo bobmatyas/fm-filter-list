@@ -17,7 +17,9 @@ function Main() {
                 <Card
                     key={job.id}
                     company={job.company}
-                    logo={job.logo}
+                    new={job.new}
+                    featured={job.featured}
+                    logo= {job.logo}
                     position={job.position}
                     postedAt={job.postedAt}
                     location={job.location}

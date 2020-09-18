@@ -31,14 +31,17 @@ const CompanyDetails = styled.div`
 `;
 
 function Card(props) {
+  console.log(props.logo);
+  const logo = props.logo;
   return (
     <CardStyled>
         <CompanyInfo>
-          <img src={Logo} style={{float: "left"}} alt="Photosnap" />
+          <img src={logo} style={{float: "left"}} alt={props.company} />
             <CompanyDetails>
               <Company 
                 company={props.company} 
-                
+                new={props.new}
+                featured={props.featured}
               />
               
               <Title position={props.position} />

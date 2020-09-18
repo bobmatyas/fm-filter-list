@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Features from './Card-features';
+import Highlights from './Card-header-highlights';
 
 const CompanyHeader = styled.div`
     align-items: center;
@@ -20,7 +20,10 @@ function Company(props) {
         <CompanyStyled>
             {props.company}
         </CompanyStyled>
-        <Features></Features>
+        <Highlights
+            new={props.new}
+            featured={props.featured}
+        />
     </CompanyHeader>
 );
 }

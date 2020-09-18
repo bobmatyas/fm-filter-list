@@ -33,13 +33,17 @@ const Featured = styled.li`
     text-transform: uppercase;
 `;
 
-function Features(props) {
-  return (
+function Highlights(props) {
+    return (
     <ListStyled>
-        {props.new ? '<New>New!</New>' '' }
-        <Featured>Featured</Featured>
+        {props.featured ? 
+            <New>New</New> : ''
+        }   
+        {props.featured ? 
+            <Featured>Featured</Featured> : ''
+        }       
     </ListStyled>
     );
 }
 
-export default Features;
+export default Highlights;
