@@ -4,7 +4,7 @@ import Company from './Card-header';
 import Title from './Card-title';
 import Details from './Card-details';
 import Technologies from './Card-technologies';
-import Logo from './images/photosnap.svg';
+
 
 const CardStyled = styled.div`
     background-color: #fff;
@@ -31,12 +31,10 @@ const CompanyDetails = styled.div`
 `;
 
 function Card(props) {
-  console.log(props.logo);
-  const logo = props.logo;
   return (
     <CardStyled>
         <CompanyInfo>
-          <img src={logo} style={{float: "left"}} alt={props.company} />
+          <img src={props.logo} style={{float: "left"}} alt={props.company} />
             <CompanyDetails>
               <Company 
                 company={props.company} 
