@@ -36,9 +36,17 @@ function Card(props) {
         <CompanyInfo>
           <img src={Logo} style={{float: "left"}} alt="Photosnap" />
             <CompanyDetails>
-              <Company company={props.company} />
+              <Company 
+                company={props.company} 
+                
+              />
+              
               <Title position={props.position} />
-              <Details details={props.technologies} />
+              <Details 
+                location={props.location}
+                position={props.position} 
+                postedAt={props.postedAt}
+              />
             </CompanyDetails>
         </CompanyInfo>
       <Technologies />

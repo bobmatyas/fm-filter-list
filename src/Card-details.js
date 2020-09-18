@@ -22,12 +22,11 @@ const ListItem = styled.li`
 
 
 function Details(props) {
-  console.log(props.details);
   return (
     <ListStyled>
-        <ListItem>1d ago</ListItem>
-        <ListItem>Full Time</ListItem>
-        <ListItem>USA Only</ListItem>
+        <ListItem>{props.postedAt}</ListItem>
+        <ListItem>{props.position}</ListItem>
+        <ListItem>{props.location}</ListItem>
     </ListStyled>
     );
 }

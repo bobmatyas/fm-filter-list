@@ -20,6 +20,7 @@ function Main() {
                     logo={job.logo}
                     position={job.position}
                     postedAt={job.postedAt}
+                    location={job.location}
                 />
             ))}
         </MainStyled>
