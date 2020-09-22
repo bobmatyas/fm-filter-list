@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Company from './Card-header';
 import Title from './Card-title';
 import Details from './Card-details';
-import Technologies from './Card-technologies';
+import Filters from './Card-filters';
 
 
 const CardStyled = styled.div`
@@ -50,7 +50,12 @@ function Card(props) {
               />
             </CompanyDetails>
         </CompanyInfo>
-      <Technologies />
+      <Filters
+        level={props.level}
+        role={props.role}
+        languages={props.languages}
+        tools={props.tools}
+      />
     </CardStyled>
     );
 }

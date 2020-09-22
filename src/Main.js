@@ -12,7 +12,6 @@ const MainStyled = styled.main`
 function Main() {
   return (
         <MainStyled>
-            <Card />
             {data.map((job, i) => (
                 <Card
                     key={job.id}
@@ -23,6 +22,11 @@ function Main() {
                     position={job.position}
                     postedAt={job.postedAt}
                     location={job.location}
+                    role={job.role}
+                    level={job.level}
+                    tools={job.tools}
+                    languages={job.languages}
+
                 />
             ))}
         </MainStyled>

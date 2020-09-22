@@ -22,7 +22,7 @@ const Technology = styled.li`
     text-transform: uppercase;
 `;
 
-function Technologies(props) {
+function Filters(props) {
  
   return (
     <ListStyled>
@@ -35,4 +35,4 @@ function Technologies(props) {
     );
 }
 
-export default Technologies;
+export default Filters;
