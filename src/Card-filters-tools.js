@@ -17,7 +17,11 @@ function FilterTools(props) {
 
   return (
     <>
-      <Tool>{data}</Tool>
+      { 
+        data.map((tool, index) => (
+          <Tool key={index}>{tool}</Tool>
+        )) 
+      }
     </>
     );
 }

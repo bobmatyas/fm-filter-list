@@ -17,7 +17,11 @@ function FilterLanguages(props) {
 
   return (
     <>
-      <Tool>{data}</Tool>
+      { 
+        data.map((tool, index) => (
+          <Tool key={index}>{tool}</Tool>
+        )) 
+      }
     </>
     );
 }
