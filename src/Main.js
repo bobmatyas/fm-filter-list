@@ -4,6 +4,10 @@ import Card from './Card';
 import data from './data/data.json';
 console.log(data);
 
+let dataFilter = data.filter(data => data.tools.includes('React'));
+
+console.log(dataFilter);
+
 const MainStyled = styled.main`
     background-color: hsl(180, 52%, 96%);
 `;
@@ -12,7 +16,7 @@ const MainStyled = styled.main`
 function Main() {
   return (
         <MainStyled>
-            {data.map((job, i) => (
+            {dataFilter.map((job, i) => (
                 <Card
                     key={job.id}
                     company={job.company}
