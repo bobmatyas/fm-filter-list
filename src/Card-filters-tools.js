@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useJobs } from './JobProvider';
+
 
 const Tool = styled.li`
     background-color: hsl(180, 31%, 95%);  
@@ -14,12 +16,17 @@ const Tool = styled.li`
 function FilterTools(props) {
 
     const data = props.tools;
+    const { addFilter } = useJobs();
 
   return (
     <>
       { 
         data.map((tool, index) => (
-          <Tool key={index}>{tool}</Tool>
+          <Tool key={index}
+            onClick={
+              ()=> addFilter(tool)
+          }
+          >{tool}</Tool>
         )) 
       }
     </>

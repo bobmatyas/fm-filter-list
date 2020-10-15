@@ -17,7 +17,7 @@ const ListStyled = styled.ul`
 
 
 function Filters(props) {
- 
+
   return (
     <ListStyled>
         <FilterLevels
