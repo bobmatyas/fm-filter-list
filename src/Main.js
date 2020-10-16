@@ -1,19 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
 import Card from './Card';
-import data from './data/data.json';
+import { useJobs } from './JobProvider';
+
 
 const MainStyled = styled.main`
     background-color: hsl(180, 52%, 96%);
 `;
 
 
-
-
 function Main() {
-  return (
+    
+    const { filteredJobs } = useJobs();
+    const { filters } = useJobs();
+    
+    return (
         <MainStyled>
-            {data.map((job, i) => (
+            { filters.length >= 1 ? 'filters' : '' }
+
+            {filteredJobs.map((job, i) => (
                 <Card
                     key={job.id}
                     company={job.company}
