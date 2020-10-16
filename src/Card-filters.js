@@ -21,6 +21,12 @@ const Filter = styled.li`
     font-weight: 700;
     margin: 10px 10px 0 0;
     padding: 10px;
+
+    :hover {
+        background-color: hsl(180, 29%, 50%);
+        color: #fff; 
+        cursor: pointer;
+    }
 `;
 
 

@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components'
 import Card from './Card';
+import FilterMenu from './Filter-Menu'
 import { useJobs } from './JobProvider';
 
 
 const MainStyled = styled.main`
-    background-color: hsl(180, 52%, 96%);
+
 `;
 
 
 function Main() {
     
-    const { filteredJobs } = useJobs();
-    const { filters } = useJobs();
+    const { filteredJobs, filters } = useJobs();
     
     return (
         <MainStyled>
-            { filters.length >= 1 ? 'filters' : '' }
+            { filters.length >= 1 ? <FilterMenu /> : '' }
 
             {filteredJobs.map((job, i) => (
                 <Card
