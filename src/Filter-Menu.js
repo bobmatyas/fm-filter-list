@@ -33,7 +33,7 @@ const Filter = styled.li`
     color: hsl(180, 29%, 50%);
     font-size: 12px;
     font-weight: 700;
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
     padding: 10px 0 10px 10px;
 `;
 

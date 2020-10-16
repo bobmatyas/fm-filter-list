@@ -12,7 +12,7 @@ const CardStyled = styled.div`
     border-radius: 5px;
     box-shadow: 0px 10px 24px -3px hsla(180, 14%, 20%, 0.1);
     padding: 25px; 
-    margin: 5% auto;
+    margin: 2.5% auto;
     max-width: 1100px;
 
     @media (min-width: 768px) {

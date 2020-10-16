@@ -14,7 +14,6 @@ export default function JobProvider ({ children }) {
     const addFilter = (filter) => {
         if  ( filters.includes(filter) ) return;
         setFilters([...filters, filter])
-        console.log(filters);
     }
 
     const removeFilter = (filter) => {
