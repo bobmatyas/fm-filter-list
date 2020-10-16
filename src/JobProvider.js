@@ -7,22 +7,21 @@ export default function JobProvider ({ children }) {
     
     const [filters, setFilter ] = useState([]);
 
-    const addFilter= (filter) => {
+    const addFilter = (filter) => {
 
         console.log('add clicked')
-
-        if (filters.length === 0) {
-            setFilter(
-                filters.push(filter)
-            )
-        } else {
-            setFilter( f => [
+        console.log(filters);
+        
+        if (filters.length === 0) 
+            setFilter([filter]);
+        else {
+            console.log(`2nd condition`)
+            setFilter([
                 ...filters, 
                 filter
             ]
-            );           
+            )      
         }
-
         console.log(filters);
 
         

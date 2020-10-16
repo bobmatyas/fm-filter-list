@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import FilterTools from './Card-filters-tools';
-import FilterLanguages from './Card-filters-languages';
-import FilterLevels from './Card-filters-levels';
-import FilterRoles from './Card-filters-roles';
+
+import { useJobs } from './JobProvider';
 
 const ListStyled = styled.ul`
     align-items: center;
@@ -15,23 +13,28 @@ const ListStyled = styled.ul`
     padding: 0;
 `;
 
+const Filter = styled.li`
+    background-color: hsl(180, 31%, 95%);  
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    font-size: 12px;
+    font-weight: 700;
+    margin: 10px 10px 0 0;
+    padding: 10px;
+`;
 
-function Filters(props) {
+
+function Filters({ tags }) {
+
+  const { addFilter } = useJobs();
 
   return (
     <ListStyled>
-        <FilterLevels
-            level={props.level}
-        />
-        <FilterRoles
-            role={props.role}
-        />
-        <FilterLanguages
-            languages={props.languages}
-        />
-        <FilterTools
-            tools={props.tools}
-        />
+        {tags.map((tag, i) => (
+            <Filter key={i}
+                onClick={()=> addFilter(tag)}>{tag}</Filter>
+        ))
+        }
     </ListStyled>
     );
 }

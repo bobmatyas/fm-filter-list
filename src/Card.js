@@ -6,6 +6,7 @@ import Details from './Card-details';
 import Filters from './Card-filters';
 
 
+
 const CardStyled = styled.div`
     background-color: #fff;
     border-radius: 5px;
@@ -31,6 +32,9 @@ const CompanyDetails = styled.div`
 `;
 
 function Card(props) {
+
+  const tags = [props.role, props.level, ...props.languages, ...props.tools];
+
   return (
     <CardStyled>
         <CompanyInfo>
@@ -51,10 +55,7 @@ function Card(props) {
             </CompanyDetails>
         </CompanyInfo>
       <Filters
-        level={props.level}
-        role={props.role}
-        languages={props.languages}
-        tools={props.tools}
+        tags={tags}
       />
     </CardStyled>
     );

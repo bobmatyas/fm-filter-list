@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      { filters.length > 0 ? 'Filters' : '' }
+      { filters.length >= 1 ? 'filters' : '' }
       <Main />
     </div>
   );
