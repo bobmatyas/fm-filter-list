@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Card from './Card';
 import FilterMenu from './Filter-Menu'
-import { useJobs } from './JobProvider';
+import { useJobs } from '../JobProvider';
 
 
 const MainStyled = styled.main`

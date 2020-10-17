@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useJobs } from './JobProvider';
+import { useJobs } from '../JobProvider';
 
 const MenuHolder = styled.div`
     background-color: #fff;
