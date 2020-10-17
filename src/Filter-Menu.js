@@ -8,13 +8,10 @@ const MenuHolder = styled.div`
     box-shadow: 0px 10px 24px -3px hsla(180, 14%, 20%, 0.1);
     padding: 5px 25px; 
     margin: -30px auto 0 auto;
-    max-width: 1100px;
-
-    @media (min-width: 768px) {
-      align-items: center; 
-      display: flex;
-      justify-content: space-between;
-    }
+    max-width: 1000px;
+    align-items: center; 
+    display: flex;
+    justify-content: space-between;
   `;
 
 const ListStyled = styled.ul`
@@ -33,7 +30,7 @@ const Filter = styled.li`
     color: hsl(180, 29%, 50%);
     font-size: 12px;
     font-weight: 700;
-    margin: 0 10px 0 0;
+    margin: 5px 10px 0 0;
     padding: 10px 0 10px 10px;
 `;
 

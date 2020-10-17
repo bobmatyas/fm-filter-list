@@ -25,17 +25,17 @@ export default function JobProvider ({ children }) {
     } 
 
     const filterFunction = ({role, level, tools, languages}) => {
-        if(filters.length === 0){
+        if ( filters.length === 0 ){
           return true;
         }
     
         const tags = [role, level];
     
-        if(tools){
+        if (tools ){
           tags.push(...tools);
         }
     
-        if(languages){
+        if (languages ) {
           tags.push(...languages);
         }
     

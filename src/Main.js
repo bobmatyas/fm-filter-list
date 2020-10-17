@@ -6,7 +6,9 @@ import { useJobs } from './JobProvider';
 
 
 const MainStyled = styled.main`
-
+    @media (min-width: 768px) {
+        padding: 0 2.5%;
+    }
 `;
 
 
@@ -25,6 +27,7 @@ function Main() {
                     new={job.new}
                     featured={job.featured}
                     logo= {job.logo}
+                    contract={job.contract}
                     position={job.position}
                     postedAt={job.postedAt}
                     location={job.location}
