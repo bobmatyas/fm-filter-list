@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/fm-filter-list/static/css/main.25e370c5.chunk.css",
+    "main.js": "/fm-filter-list/static/js/main.34a14fda.chunk.js",
+    "main.js.map": "/fm-filter-list/static/js/main.34a14fda.chunk.js.map",
+    "runtime-main.js": "/fm-filter-list/static/js/runtime-main.365b5865.js",
+    "runtime-main.js.map": "/fm-filter-list/static/js/runtime-main.365b5865.js.map",
+    "static/js/2.c661e10b.chunk.js": "/fm-filter-list/static/js/2.c661e10b.chunk.js",
+    "static/js/2.c661e10b.chunk.js.map": "/fm-filter-list/static/js/2.c661e10b.chunk.js.map",
+    "index.html": "/fm-filter-list/index.html",
+    "precache-manifest.c6b8a675c8e76a43d272d419da83eca5.js": "/fm-filter-list/precache-manifest.c6b8a675c8e76a43d272d419da83eca5.js",
+    "service-worker.js": "/fm-filter-list/service-worker.js",
+    "static/css/main.25e370c5.chunk.css.map": "/fm-filter-list/static/css/main.25e370c5.chunk.css.map",
+    "static/js/2.c661e10b.chunk.js.LICENSE.txt": "/fm-filter-list/static/js/2.c661e10b.chunk.js.LICENSE.txt",
+    "static/media/bg-header-desktop.svg": "/fm-filter-list/static/media/bg-header-desktop.6e2f7196.svg",
+    "static/media/bg-header-mobile.svg": "/fm-filter-list/static/media/bg-header-mobile.6b5ff5a0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.365b5865.js",
+    "static/js/2.c661e10b.chunk.js",
+    "static/css/main.25e370c5.chunk.css",
+    "static/js/main.34a14fda.chunk.js"
+  ]
+}
