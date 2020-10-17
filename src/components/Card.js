@@ -46,8 +46,12 @@ function Card(props) {
 
   const tags = [props.role, props.level, ...props.languages, ...props.tools];
 
-  return (
-    <CardStyled>
+  let styles = {};
+  if (props.new) 
+    styles = {borderLeft: "5px solid hsl(180, 29%, 50%)"}
+  
+    return (
+    <CardStyled style={styles}> 
         <CompanyInfo>
             <CompanyDetails>
               <Company 
